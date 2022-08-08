@@ -1,0 +1,47 @@
+/* сбросы стилей  */
+* {
+    margin: 0;
+}
+
+html, body {
+    font-family: Tahoma, sans-serif;
+}
+.container{
+    max-width: 1400px; 
+    width: 90%;
+    margin:0 auto ;
+ }
+.main{
+    background: pink;
+    padding: 30px 0; /*те сверху и снизу по 30px, а сверху и снизу 0*/
+} 
+
+ .main::after {  /*родительский элемент растнулся по всем дивам */
+    content: "";
+    display: block;
+    width: 100%;
+    clear:both;
+}
+
+.site-header {
+    text-align: center; /* выравнивается по центру */
+    padding: 30px auto; 
+ }
+
+.sidebar {
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    background: yellow;
+ }
+article {
+    width: 49%;
+   float: left;  /* прилипает к левому краю */
+    margin-right: 1%; /*отступ  */
+    background: green;
+ }
+ aside {
+    width: 25%;
+    float: left;  /* прилипает к левому краю */
+    background: red;
+ }
